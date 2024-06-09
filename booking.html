@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Parking Slot</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="booking.css">
+</head>
+<body>
+    <header>
+        <img src="logo-color-removebg-preview.png" alt="Logo" class="logo">
+        <h1>You can park here!</h1>
+        <div class="user-menu">
+            <button id="logoutBtn">Logout</button>
+        </div>
+    </header>
+    <section>
+        <nav class="menu-bar">
+            <a href="home.html" class="menu-button">Home</a>
+            <a href="dashboard.html" id="dashboard-link" class="menu-button">Dashboard</a>
+            <a href="booking.html" id="booking-link" class="menu-button">Book Parking Spot</a>
+            <a href="real.html" id="realtime-link" class="menu-button">Real-Time Track</a>
+            
+        </nav>
+    </section>
+    <section class="content">
+        <div class="container">
+            <h2>Book a Parking Slot</h2>
+            <form id="booking-form">
+                <div class="form-row">
+                    <div class="form-column">
+                        <h3>Personal Information</h3>
+                        <div class="form-group">
+                            <label for="full-name">Full Name</label>
+                            <input type="text" id="full-name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" required>
+                        </div>
+
+                        <h3>Booking Details</h3>
+                        <div class="form-group">
+                            <label for="booking-date">Date of Booking</label>
+                            <input type="date" id="booking-date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="arrival-time">Time of Arrival</label>
+                            <input type="time" id="arrival-time" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="departure-time">Time of Departure</label>
+                            <input type="time" id="departure-time" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="slot-type">Parking Slot Type</label>
+                            <select id="slot-type" required>
+                                <option value="standard">Standard</option>
+                                <option value="compact">Compact</option>
+                                <option value="electric">Electric</option>
+                                <option value="handicap">Handicap</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-column">
+                        <h3>Vehicle Information</h3>
+                        <div class="form-group">
+                            <label for="vehicle-make">Vehicle Make and Model</label>
+                            <input type="text" id="vehicle-make" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="license-plate">License Plate Number</label>
+                            <input type="text" id="license-plate" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="vehicle-color">Vehicle Color</label>
+                            <input type="text" id="vehicle-color" required>
+                        </div>
+
+                        <h3>Payment Information</h3>
+                        <div class="form-group">
+                            <label for="payment-method">Payment Method</label>
+                            <select id="payment-method" required>
+                                <option value="credit-card">Credit Card</option>
+                                <option value="paypal">PayPal</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="card-number">Card Number</label>
+                            <input type="text" id="card-number" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="expiry-date">Expiry Date</label>
+                            <input type="month" id="expiry-date" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="cvv">CVV</label>
+                            <input type="text" id="cvv" required>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit">Book Slot</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <h3>Contact Us</h3>
+                <p>If you have any questions or need assistance, feel free to reach out to us:</p>
+                <p>Email: <a href="parkeasy@naver.com">support@parkingmanagement.com</a></p>
+                <p>Phone: (010) 4456-7890</p>
+                <p>Address: Ulsan , South Korea</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Parking Management System. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

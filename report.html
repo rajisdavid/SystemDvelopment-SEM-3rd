@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate Report</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="report.css">
+</head>
+<body>
+    <header>
+        <nav class="menu-bar">
+            <a href="home.html" class="menu-button">Home</a>
+            <a href="dashboard.html" class="menu-button">Dashboard</a>
+            <a href="booking.html" class="menu-button">Book Parking Spot</a>
+            <a href="real.html" class="menu-button">Real-Time Track</a>
+        </nav>
+    </header>
+    <section class="content">
+        <div class="container">
+            <div class="left-side">
+                <div class="welcome-message">
+                    <h2>Welcome to [Your Company Name]</h2>
+                    <p>At [Your Company Name], we specialize in providing innovative and efficient parking management solutions designed to meet the needs of modern urban environments. Our mission is to streamline the parking experience for both operators and users, ensuring a hassle-free and optimized process from entry to exit.</p>
+                </div>
+                <div class="user-stats">
+                    <div class="user-count">
+                        <h3>Around 130,650+</h3>
+                        <p>Users have been using our service</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right-side">
+                <h2>Generate Report</h2>
+                <form id="report-form">
+                    <div class="form-group">
+                        <label for="report-type">Report Type</label>
+                        <select id="report-type">
+                            <option value="summary">Summary Overview</option>
+                            <option value="financial">Financial Information</option>
+                            <option value="user-stats">User Statistics</option>
+                            <option value="operational">Operational Metrics</option>
+                            <option value="spot-usage">Parking Spot Usage</option>
+                            <option value="traffic-flow">Traffic Flow</option>
+                            <option value="customer-feedback">Customer Feedback</option>
+                            <option value="environmental">Environmental Impact</option>
+                            <option value="security">Security Reports</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="date-range">Date Range</label>
+                        <input type="date" id="start-date" placeholder="Start Date">
+                        <input type="date" id="end-date" placeholder="End Date">
+                    </div>
+                    <button type="submit">Generate Report</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2024 Smart Parking Management System. All rights reserved.</p>
+    </footer>
+    <script src="report.js"></script>
+</body>
+</html>

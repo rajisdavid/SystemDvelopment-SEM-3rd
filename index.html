@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking Management System</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header>
+    <nav class="menu-bar">
+        <a href="dashboard.html" id="dashboard-link" class="menu-button">Dashboard</a>
+        <a href="booking.html" id="booking-link" class="menu-button">Book Parking Spot</a>
+        <a href="realtime.html" id="realtime-link" class="menu-button">Real-Time Track</a>
+        <a href="report.html" id="report-link" class="menu-button">Generate Report</a>
+    </nav>
+</header>
+    <section>
+   
+    
+
+        <div class="container">
+            <main id="content">
+                <h2>Welcome to Smart Parking Management! <span id="usernameDisplay"></span></h2>
+                <p>SEffortlessly manage your parking with our real-time, sensor-driven solution. Our system provides 
+                    up-to-the-minute information about available parking spaces, helping you save time and reduce stress.
+                </p>
+        </div>
+    </section>
+
+    <div class="wrapper">
+       <div class="form-box">
+           <div class="login-container" id="login">
+               <div class="top">
+                   <span>Don't have an account? <a href="#" onclick="register()">Sign Up</a></span>
+                  
+               </div>
+               <div id="login-error" class="error-message"></div>
+               <div class="input-box">
+                   <input type="text" id="login-username" class="input-field" placeholder="Username or Email">
+                   <i class="bx bx-user"></i>
+               </div>
+               <div class="input-box password-wrapper">
+                   <input type="password" id="login-password" class="input-field" placeholder="Password">
+                   <i class="bx bx-lock-alt"></i>
+                   <button type="button" class="toggle-password" id="toggleLoginPassword">
+                       <i class="bx bx-show"></i>
+                   </button>
+               </div>
+               <div class="input-box">
+                   <input type="button" class="submit" value="Sign In" onclick="loginUser()">
+               </div>
+               <div class="two-col">
+                   <div class="one">
+                       <input type="checkbox" id="login-check">
+                       <label for="login-check"> Remember Me</label>
+                   </div>
+                   <div class="two">
+                       <label><a href="#">Forgot password?</a></label>
+                   </div>
+               </div>
+           </div>
+   
+           <div class="register-container" id="register">
+               <div class="top">
+                   <span>Have an account? <a href="#" onclick="login()">Login</a></span>
+                   <header>Sign Up</header>
+               </div>
+               <div id="register-error" class="error-message"></div>
+               <div class="two-forms">
+                   <div class="input-box">
+                       <input type="text" id="register-firstname" class="input-field" placeholder="Firstname">
+                       <i class="bx bx-user"></i>
+                   </div>
+                   <div class="input-box">
+                       <input type="text" id="register-lastname" class="input-field" placeholder="Lastname">
+                       <i class="bx bx-user"></i>
+                   </div>
+               </div>
+               <div class="input-box">
+                   <input type="text" id="register-email" class="input-field" placeholder="Email">
+                   <i class="bx bx-envelope"></i>
+               </div>
+               <div class="input-box password-wrapper">
+                   <input type="password" id="register-password" class="input-field" placeholder="Password">
+                   <i class="bx bx-lock-alt"></i>
+                   <button type="button" class="toggle-password" id="toggleRegisterPassword">
+                       <i class="bx bx-show"></i>
+                   </button>
+               </div>
+               <div class="input-box">
+                   <input type="button" class="submit" value="Register" onclick="registerUser()">
+               </div>
+               <div class="two-col">
+                   <div class="one">
+                       <input type="checkbox" id="register-check">
+                       <label for="register-check"> Remember Me</label>
+                   </div>
+                   <div class="two">
+                       <label><a href="#">Terms & conditions</a></label>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div>   
+   
+   <script src="login.js"></script>
+</body>
+</html>

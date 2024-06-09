@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking Management System</title>
+    <link rel="stylesheet" href="real.css">
+</head>
+<body>
+    <header>
+        <img src="logo-color-removebg-preview.png" alt="Logo" class="logo">
+        <h1>You can park here!</h1>
+        <div class="user-menu">
+            <button id="logoutBtn">Logout</button>
+        </div>
+    </header>
+    <section>
+        <nav class="menu-bar">
+
+            <a href="home.html" class="menu-button">Home</a>
+            <a href="dashboard.html" class="menu-button">Dashboard</a>
+            <a href="booking.html" class="menu-button">Book Parking Spot</a>
+            <a href="real.html" class="menu-button">Real-Time Track</a>
+        </nav>
+    </section>
+    </header>
+    <section class="content">
+        <div class="container">
+            <h2>Real-Time Parking Availability</h2>
+            <div id="map" class="map"></div>
+            <div class="info-panel">
+                <div id="parking-info" class="info-section">
+                    <h3>Parking Information</h3>
+                    <div id="parking-availability"></div>
+                </div>
+                <div id="notifications" class="info-section">
+                    <h3>Notifications</h3>
+                    <ul id="notification-list"></ul>
+                </div>
+            </div>
+            <div class="info-panel">
+                <div id="vehicle-tracking" class="info-section">
+                    <h3>Vehicle Tracking</h3>
+                    <div id="vehicle-location"></div>
+                </div>
+                <div id="payment-integration" class="info-section">
+                    <h3>Payment Integration</h3>
+                    <form id="payment-form">
+                        <input type="text" placeholder="Card Number">
+                        <input type="text" placeholder="Expiry Date">
+                        <input type="text" placeholder="CVV">
+                        <button type="submit">Pay Now</button>
+                    </form>
+                </div>
+            </div>
+            <div class="info-panel">
+                <div id="user-profile" class="info-section">
+                    <h3>User Profile</h3>
+                    <div id="user-details"></div>
+                </div>
+                <div id="feedback" class="info-section">
+                    <h3>Feedback</h3>
+                    <form id="feedback-form">
+                        <textarea placeholder="Your feedback"></textarea>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <h3>Contact Us</h3>
+                <p>If you have any questions or need assistance, feel free to reach out to us:</p>
+                <p>Email: <a href="parkeasy@naver.com">support@parkingmanagement.com</a></p>
+                <p>Phone: (010) 4456-7890</p>
+                <p>Address: Ulsan , South Korea</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Parking Management System. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="real.css"></script>
+</body>
+</html>

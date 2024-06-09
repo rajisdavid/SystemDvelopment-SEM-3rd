@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parking Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="logo-color-removebg-preview.png" alt="Logo" class="logo">
+        <h1>You can park here!</h1>
+        <div class="user-menu">
+            <button id="logoutBtn">Logout</button>
+        </div>
+    </header>
+    <section>
+        <nav class="menu-bar">
+            <a href="dashboard.html" id="dashboard-link" class="menu-button">Dashboard</a>
+            <a href="booking.html" id="booking-link" class="menu-button">Book Parking Spot</a>
+            <a href="real.html" id="realtime-link" class="menu-button">Real-Time Track</a>
+            <a href="#aboutus" class="menu-button"> About us</a>
+            
+        </nav>
+    </section>
+
+
+
+    <section class="content">
+        <div class="container">
+            <div class="left-side">
+                <div class="welcome-message">
+                    <h2>Welcome to [Your Company Name]</h2>
+                    <p>At [Your Company Name], we specialize in providing innovative and efficient parking management solutions designed to meet the needs of modern urban environments. Our mission is to streamline the parking experience for both operators and users, ensuring a hassle-free and optimized process from entry to exit.</p>
+                </div>
+                <div class="user-stats">
+                    <div class="user-count">
+                        <h3>Around 130,650+</h3>
+                        <p>Users have been using our service</p>
+                    </div>
+                </div>
+            </div>
+            <div class="right-side">
+                <h2>Generate Report</h2>
+                <form id="report-form">
+                    <div class="form-group">
+                        <label for="report-type">Report Type</label>
+                        <select id="report-type">
+                            <option value="summary">Summary Overview</option>
+                            <option value="financial">Financial Information</option>
+                            <option value="user-stats">User Statistics</option>
+                            <option value="operational">Operational Metrics</option>
+                            <option value="spot-usage">Parking Spot Usage</option>
+                            <option value="traffic-flow">Traffic Flow</option>
+                            <option value="customer-feedback">Customer Feedback</option>
+                            <option value="environmental">Environmental Impact</option>
+                            <option value="security">Security Reports</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="date-range">Date Range</label>
+                        <input type="date" id="start-date" placeholder="Start Date">
+                        <input type="date" id="end-date" placeholder="End Date">
+                    </div>
+                    <button type="submit">Generate Report</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="feature">
+        <div class="gallery">
+            <p>What we provide for you: </p>
+            <div class="gallery-item">
+                <img src="realtime.webp" alt="feature one- real time parking available">
+                <div class="description">
+                    <ul>
+                    <li>Instant Updates: Get real-time information on available parking spots, eliminating the hassle of driving around to find a space. </li>
+                    <li>Live Map: View a live map showing current parking availability, helping you plan your parking ahead of time.</li>
+                    <li>Smart Alerts: Receive notifications about parking space availability directly on your mobile device.</li>
+                </ul>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="reserve.webp" alt="feature two- resevre">
+                <div class="description">
+                    <ul>
+                        <li>Book in Advance: Secure your parking spot in advance to ensure availability when you arrive.</li>
+                        <li>Flexible Options: Choose from various parking options such as hourly, daily, or long-term reservations.</li>
+                        <li>Easy Modifications: Modify or cancel your reservations easily through our user-friendly interface.</li>
+                    </ul>
+                    
+                   </div> 
+    
+            </div>
+            <div class="gallery-item">
+                <img src="security.webp" alt="feature three-secutiry">
+                <div class="description">
+                    <ul>
+                        <li>24/7 Monitoring: Our facilities are equipped with high-definition CCTV cameras for round-the-clock monitoring.</li>
+                        <li>License Plate Recognition: Advanced license plate recognition technology ensures only authorized vehicles can enter.</li>
+                        <li>Secure Access Control: Robust access control systems provide secure entry and exit, protecting both your vehicle and personal safety.</li>
+
+                    </ul>
+                </div>
+            </div>
+            <!-- <div class="gallery-item">
+                <img src="download.png" alt="feature four">
+                <div class="description">A tranquil forest path with sunbeams filtering through the dense canopy of trees. The ground is covered with fallen leaves, and the atmosphere is serene and peaceful.</div>
+            </div>
+            <div class="gallery-item">
+                <img src="download.png" alt="feature five">
+                <div class="description">A vibrant coral reef underwater scene filled with colorful corals, various fish, and clear blue water. The sunlight penetrates the surface, creating a beautiful play of light underwater.</div> -->
+            <!-- </div> -->
+        </div>
+    </section>
+
+
+    <section class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <blockquote>"The best parking management system I've ever used! It makes finding and reserving parking spots so easy." - Magar Dean</blockquote>
+        <blockquote>"Super convenient and easy to use. The real-time tracking feature is a game-changer!" - David Tamang</blockquote>
+        <blockquote>"Excellent customer service and a very reliable system. Highly recommended!" - Mohani Mandal</blockquote>
+    </section>
+
+<!-- //About use -->
+
+<section class="about-us-container">
+    <h2 id="aboutus">About Us</h2>
+    <p> We specialize in providing innovative and efficient parking management solutions designed to meet the needs of modern urban environments. Our mission is to streamline the parking experience for both operators and users, ensuring a hassle-free and optimized process from entry to exit.</p>
+
+    <h3>Our Vision</h3>
+    <p>We envision a world where parking is seamless and stress-free, contributing to smarter, more sustainable cities. By leveraging cutting-edge technology, we aim to reduce congestion, enhance user satisfaction, and improve overall efficiency in parking management.</p>
+
+    
+    <h3>Meet Our Team</h3>
+    <div class="team-member">
+        <img src="raj.jpg" alt="[Member 1 Name]" style="margin-top: 20px;">
+        <div class="member-info">
+            <h4 >Tamang Raj Shekhar - CEO & Founder</h4>
+            <p>The CEO leads our company, setting the vision and strategy for innovative parking management solutions, making key decisions, and representing us to clients and stakeholders. They ensure our long-term growth and success in the market.
+
+            </p>
+        </div>
+    </div>
+    <div class="team-member">
+        <img src="mohan.jpeg" alt="[Member 2 Name]">
+        <div class="member-info">
+            <h4> Mandal Mohan- CTO & Co-Founder</h4>
+            <p>The CTO drives our technological advancements, overseeing the development and implementation of cutting-edge parking management technologies and ensuring our systems are secure and scalable. They lead innovation efforts to keep us at the forefront of the industry.</p>
+        </div>
+    </div>
+    <div class="team-member">
+        <img src="swasti.jpeg" alt="[Member 3 Name]">
+        <div class="member-info">
+            <h4> Sharma Swastika - Head of Operations</h4>
+            <p>The COO manages daily operations, optimizing processes to ensure efficient service delivery and compliance with industry standards, and coordinating resources effectively. They ensure smooth and efficient operations to enhance customer satisfaction.</p>
+        </div>
+    </div>
+    <div class="team-member">
+        <img src="sujan.jpeg" alt="[Member 4 Name]">
+        <div class="member-info">
+            <h4>Tamang Sujan- Lead Developer</h4>
+            <p>
+                The Lead Developer heads the development team, creating and maintaining our software solutions, ensuring high-quality code, and integrating the latest technologies to improve user experience. They lead the technical team to deliver robust and reliable software products.</p>
+        </div>
+    </div>
+
+    <h3>Our Commitment</h3>
+    <p>We are committed to delivering reliable, scalable, and user-friendly parking management solutions. Customer satisfaction and continuous improvement are at the core of our values, driving us to exceed expectations and set new standards in the industry.</p>
+
+    <p>Thank you for choosing [Your Company Name]. We look forward to working with you and transforming your parking experience.</p>
+</div>
+
+    <h3>Our Commitment</h3>
+    <p>We are committed to delivering reliable, scalable, and user-friendly parking management solutions. Customer satisfaction and continuous improvement are at the core of our values, driving us to exceed expectations and set new standards in the industry.</p>
+
+    <p>Thank you for choosing [Your Company Name]. We look forward to working with you and transforming your parking experience.</p>
+</section>
+
+
+    <!-- <section id="aboutUs">
+        <h2>About Us</h2>
+        <p>Welcome to the Parking Management System, your reliable partner for efficient parking solutions. Our mission is to simplify the parking experience for everyone by providing innovative and user-friendly services. We are dedicated to enhancing convenience, safety, and satisfaction for all our users.</p>
+    </section> -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <h3>Contact Us</h3>
+                <p>If you have any questions or need assistance, feel free to reach out to us:</p>
+                <p>Email: <a href="parkeasy@naver.com">support@parkingmanagement.com</a></p>
+                <p>Phone: (010) 4456-7890</p>
+                <p>Address: Ulsan , South Korea</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Parking Management System. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

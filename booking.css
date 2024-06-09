@@ -1,0 +1,255 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    scroll-behavior: smooth;
+    background-color: rgb(248, 251, 252);
+}
+
+header {
+    background: url(download.png);
+    background-size: cover;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    position: relative;
+    height: 300px;
+}
+main#content {
+    margin-bottom: 60px;
+}
+
+h1{
+    font-family: "major mono display", monospace;
+    font-size: 90px;
+    font-style: italic;
+    color: rgb(162, 198, 243);
+    opacity: 0.7;
+    flex-grow: 1;
+    text-align: center;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: font-size 0.6s ease;
+    height: auto;
+    width: auto;
+}
+
+.logo {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    width: 20%;
+    height: auto; 
+    
+}
+
+.user-menu {
+    position: absolute;
+    bottom: 10px; /* Position 10px from the bottom */
+    right: 10px; /* Position 10px from the right */
+}
+
+#logoutBtn {
+    background-color: #aea4a4;
+    color: black;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 10px;
+    position: relative;
+}
+
+#logoutBtn:hover {
+    background-color: rgb(188, 243, 188);
+
+}
+
+.menu-bar {
+    background-color: whitesmoke;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    transition: top 0.3s;
+}
+
+
+.menu-bar .menu-button {
+    background-color:aliceblue;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 10px;
+    text-decoration: none; /* Remove underline from links */
+    display: inline-block; /* Make the link behave like a button */    
+
+}
+
+
+.menu-bar .menu-button:hover {
+    background-color:rgb(215, 232, 247);
+    color:rgb(20, 17, 17); /* Font color for the buttons on hover */
+}
+
+.content {
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#booking-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.form-column {
+    display: flex;
+    flex-direction: column;
+    width: 48%;
+}
+
+h3 {
+    margin-top: 30px;
+    color: #333;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+footer {
+    background-color: #f8faf9;
+    color: rgb(24, 3, 3);
+    text-align: center;
+    padding: 20px 0;
+    box-sizing: border-box;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin: 5px;
+}
+@media (max-width: 768px) {
+    .form-column {
+        width: 100%;
+    }
+
+    button {
+        margin-top: 20px;
+    }
+}
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header {
+        height: 300px;
+    }
+
+    .logo {
+        width: 30%;
+    }
+
+    h1 {
+        font-size: 10vw;
+    }
+
+    .menu-bar .menu-button {
+        font-size: 0.9em;
+        margin: 5px 0;
+    }
+
+    .gallery-item {
+        width: calc(100% - 40px);
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        height: 250px;
+    }
+
+    .logo {
+        width: 40%;
+    }
+
+    h1 {
+        font-size: 7vw;
+    }
+
+    .menu-bar .menu-button {
+        font-size: 0.8em;
+        margin: 5px 0;
+    }
+
+    .gallery-item {
+        width: calc(100% - 40px);
+    }
+
+
+    #logoutBtn {
+        font-size: 12px;
+        padding: 6px 12px;
+      
+    }
+}
